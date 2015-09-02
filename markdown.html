@@ -116,7 +116,6 @@
   <body>
     <textarea id="source">
 
-name:inverse
 layout: true
 class: center, middle, inverse
 ---
@@ -131,11 +130,14 @@ name:me
 
 My Awesome Presentation
 ---
+layout:false
 name:how
+class:left
 .left-column[
-#How does it work?
-###-Markdown
+###A way to learn#
+####-Markdown
 ]
+
 .right-column[
 A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
 
@@ -168,6 +170,12 @@ Regular Markdown rules apply with only a single exception:
 Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
 ]
 ---
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+---
 ## Introduction 
 
 1. [homePage](www.johnjay.me)
@@ -187,20 +195,19 @@ Hobby
 * Item 1
  
 * Item 2
- 
+
 * Item three  
 
-This paragraph has a quote
- 
+This paragraph has a quote 
 > That is pulled out like this
 from the text my post.
 
 ---
-#Intern
-<img src="1.jpg" width="300.13" height="200.9"/>
+Use img label to set the image size  
+<img src="img/intern.jpg" width="300.13" height="200.9"/>
 
     </textarea>
-    <script src="remark.min.js">
+    <script src="lib/remark.min.js">
     </script>
     <script>
       var slideshow = remark.create();
